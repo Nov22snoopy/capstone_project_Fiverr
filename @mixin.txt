@@ -1,0 +1,15 @@
+Reset
+header {
+font-weight: 700;
+color: #404145;
+
+}
+
+@mixin cho
+
+layout
+button;
+service {
+slick-next;
+slick-prev
+};

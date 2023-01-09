@@ -1,0 +1,85 @@
+#selling {
+  padding: 96px 0;
+  background-color: #f1fdf7;
+
+  .selling-left {
+    padding-right: 11%;
+
+    .selling-header {
+      h2 {
+        font-weight: 700;
+        color: #404145;
+      }
+    }
+
+    .selling-content {
+      .selling-text {
+        margin: 20px 0;
+
+        h6 {
+          color: #404145;
+          font-weight: 700;
+          font-size: 1.1rem;
+
+          span {
+            svg {
+              fill: rgb(122, 125, 133);
+              width: 24px;
+              height: 24px;
+            }
+
+          }
+        }
+
+        p {
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .selling-right {
+    .selling-video {
+
+      picture {
+        position: relative;
+
+        img {
+
+          cursor: pointer;
+
+
+        }
+        &::after {
+          content: "";
+          background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png) no-repeat;
+          background-size: 80px;
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          z-index: 0;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+      }
+
+      
+    }
+  }
+}
+.modal {
+  .modal-content {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      
+    }
+  }
+
+}

@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Fiverr - Freelance Services Marketplace</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slick -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <!-- Icon -->
+  <link rel="icon" href="./img/icon.png">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+            </path>
+            <g fill="#1dbf73">
+              <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
+            </g>
+          </svg>
+        </a>
+        <div class="navbar-search ml-3">
+          <form class="search-form">
+            <input type="text" placeholder="What service are you looking for today?">
+            <button class="btn btn-dark">
+              <div class="btn-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentFill">
+                  <path
+                    d="m15.89 14.653-3.793-3.794a.37.37 0 0 0-.266-.109h-.412A6.499 6.499 0 0 0 6.5 0C2.91 0 0 2.91 0 6.5a6.499 6.499 0 0 0 10.75 4.919v.412c0 .1.04.194.11.266l3.793 3.794a.375.375 0 0 0 .531 0l.707-.707a.375.375 0 0 0 0-.53ZM6.5 11.5c-2.763 0-5-2.238-5-5 0-2.763 2.237-5 5-5 2.762 0 5 2.237 5 5 0 2.762-2.238 5-5 5Z">
+                  </path>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fiverr Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 1C4.58875 1 1 4.58875 1 9C1 13.4113 4.58875 17 9 17C13.4113 17 17 13.4113 17 9C17 4.58875 13.4113 1 9 1ZM8.53125 4.92676C7.81812 4.89612 7.11218 4.7959 6.43811 4.63293C6.54578 4.37781 6.6626 4.13281 6.78857 3.90063C7.30542 2.94824 7.93994 2.27991 8.53125 2.03784V4.92676ZM8.53125 5.86499V8.53125H5.60339C5.64465 7.4906 5.82202 6.45752 6.11536 5.51782C6.8927 5.71362 7.70874 5.83215 8.53125 5.86499ZM8.53125 9.46875V12.135C7.70874 12.1678 6.8927 12.2864 6.11536 12.4822C5.82202 11.5425 5.64465 10.5094 5.60339 9.46875H8.53125ZM8.53125 13.0732V15.9622C7.93994 15.7201 7.30542 15.0518 6.78857 14.0994C6.6626 13.8672 6.54578 13.6222 6.43811 13.3671C7.11218 13.2041 7.81799 13.1039 8.53125 13.0732ZM9.46875 13.0732C10.1819 13.1039 10.8878 13.2041 11.5619 13.3671C11.4542 13.6222 11.3374 13.8672 11.2114 14.0994C10.6946 15.0518 10.0601 15.7201 9.46875 15.9622V13.0732ZM9.46875 12.135V9.46875H12.3966C12.3553 10.5094 12.178 11.5425 11.8846 12.4822C11.1073 12.2864 10.2913 12.1678 9.46875 12.135ZM9.46875 8.53125V5.86499C10.2913 5.83215 11.1073 5.71362 11.8846 5.51782C12.178 6.45752 12.3553 7.4906 12.3966 8.53125H9.46875ZM9.46875 4.92676V2.03784C10.0601 2.27991 10.6946 2.94824 11.2114 3.90063C11.3374 4.13281 11.4542 4.37781 11.5619 4.63293C10.8878 4.7959 10.1819 4.89612 9.46875 4.92676ZM12.0354 3.45349C11.8007 3.02087 11.5457 2.63953 11.2769 2.31421C12.2141 2.63428 13.0631 3.14636 13.7771 3.8031C13.3699 4.02124 12.931 4.21069 12.4694 4.36902C12.3384 4.0509 12.1936 3.74487 12.0354 3.45349ZM5.9646 3.45349C5.8064 3.74487 5.66162 4.0509 5.53064 4.36902C5.06897 4.21069 4.63013 4.02112 4.2229 3.8031C4.93689 3.14636 5.78589 2.63428 6.72314 2.31421C6.45435 2.63953 6.19946 3.02075 5.9646 3.45349ZM5.2135 5.25012C4.89355 6.27368 4.70544 7.38953 4.66492 8.53125H1.95349C2.05383 7.00769 2.63892 5.61438 3.5564 4.50525C4.06555 4.79724 4.62317 5.047 5.2135 5.25012ZM4.66492 9.46875C4.70544 10.6106 4.89355 11.7263 5.2135 12.7499C4.62317 12.953 4.06555 13.2028 3.5564 13.4948C2.63892 12.3856 2.05383 10.9923 1.95349 9.46875H4.66492ZM5.53064 13.631C5.66162 13.9491 5.8064 14.2551 5.9646 14.5465C6.19946 14.9791 6.45435 15.3605 6.72314 15.6858C5.78589 15.3657 4.93689 14.8536 4.22302 14.1969C4.63 13.9789 5.06897 13.7893 5.53064 13.631ZM12.0354 14.5465C12.1936 14.2551 12.3384 13.9491 12.4694 13.631C12.931 13.7893 13.3699 13.9789 13.7771 14.1969C13.0631 14.8536 12.2141 15.3657 11.2769 15.6858C11.5457 15.3605 11.8005 14.9792 12.0354 14.5465ZM12.7865 12.7499C13.1064 11.7263 13.2946 10.6105 13.3351 9.46875H16.0465C15.9462 10.9923 15.3611 12.3856 14.4436 13.4948C13.9344 13.2028 13.3768 12.953 12.7865 12.7499ZM13.3351 8.53125C13.2946 7.3894 13.1064 6.27368 12.7865 5.25012C13.3768 5.047 13.9344 4.79724 14.4436 4.50525C15.3611 5.61438 15.9462 7.00769 16.0465 8.53125H13.3351Z"
+                    stroke-width="0.2"></path>
+                </svg>
+                English
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">US$ USD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Become a Seller
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-btn">
+          <a href="">Join</a>
+        </div>
+      </nav>
+    </div>
+    <div id="categories_sub">
+      <nav class="categories_sub-menu">
+        <ul class="sub-menu">
+          <li class="sub-item"><a href="">Graphics & Design</a></li>
+          <li class="sub-item"><a href="">Digital Marketing</a></li>
+          <li class="sub-item"><a href="">Writing & Translation</a></li>
+          <li class="sub-item"><a href="">Video & Animation</a></li>
+          <li class="sub-item"><a href="">Music & Audio</a></li>
+          <li class="sub-item"><a href="">Programming & Tech</a></li>
+          <li class="sub-item"><a href="">Business</a></li>
+          <li class="sub-item"><a href="">Lifestyle</a></li>
+          <li class="sub-item"><a href="">Trending</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Carousel -->
+  <section id="carousel">
+    <div class="carousel-slider">
+      <div class="carousel_item">
+        <div class="carousel-footer">
+          <p>
+            Andrea
+            <b>Fashion Designer</b>
+          </p>
+        </div>
+      </div>
+      <div class="carousel_item">
+        <div class="carousel-footer">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Moon
+            <b>Marketing Expert</b>
+          </p>
+        </div>
+      </div>
+      <div class="carousel_item">
+        <div class="carousel-footer">
+          <p>
+            Ritika
+            <b>Shoemaker and Designer</b>
+          </p>
+        </div>
+      </div>
+      <div class="carousel_item">
+        <div class="carousel-footer">
+          <p>
+            Zach
+            <b>Bar Owner</b>
+          </p>
+        </div>
+      </div>
+      <div class="carousel_item">
+        <div class="carousel-footer">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Gabrielle
+            <b>Video Editor</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container carousel-text">
+      <div class="row">
+        <div class="col-xl-6 col-md-12 col-12">
+          <div class="carousel-content">
+            <div class="carousel-head">
+              <span>
+                Find the perfect <i> freelance</i>
+                services for your business
+              </span>
+            </div>
+            <div class="carousel-search">
+              <span>
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="currentcolor">
+                    <path
+                      d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z">
+                    </path>
+                  </g>
+                </svg>
+              </span>
+              <span>
+                <input type="text" placeholder='Try "building mobile app"'>
+              </span>
+              <div class="search-btn">
+                <a href="">Search</a>
+              </div>
+            </div>
+            <div class="carousel-btn">
+              <p class="text-white mr-2">Popular:</p>
+              <div class="btn-list">
+                <a href="">Website Design</a>
+                <a href="">WordPress</a>
+                <a href="">Logo Design</a>
+                <a href="">Video Editing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-brand">
+      <div class="container ">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="brand-list col-lg-2 col-md-4 col-sm-6 col-12">
+            <p>Trusted by: </p>
+          </div>
+          <div class="brand-list col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="./img/facebook2x.188a797.png" alt="" class="img-fluid">
+          </div>
+          <div class="brand-list col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="./img/google2x.06d74c8.png" alt="" class="img-fluid">
+          </div>
+          <div class="brand-list col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="./img/netflix2x.02746a2.png" alt="" class="img-fluid">
+          </div>
+          <div class="brand-list col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="./img/pandg2x.259884d.png" alt="" class="img-fluid">
+          </div>
+          <div class="brand-list col-lg-2 col-md-4 col-sm-6 col-12">
+            <img src="./img/paypal2x.22728be.png" alt="" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- services -->
+  <section id="service">
+    <div class="container ">
+      <div class="service-header">
+        <h2>Popular professional services </h2>
+      </div>
+      <div class="service-content">
+        <div class="service-slider">
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/seo-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Unlock grow online</small> <br>
+                SEO
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/illustration-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Color your dreams</small> <br>
+                Illustration
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/translation-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Go global</small> <br>
+                Translation
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/data-entry-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Learn your business</small> <br>
+                Data Entry
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/book-covers-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Showcase your story</small> <br>
+                Book Covers
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/logo-design-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Build your brand</small> <br>
+                Logo Design
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/wordpress-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Customize your site</small> <br>
+                WordPress
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/voiceover-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Share your message</small> <br>
+                Voice Over
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/animated-explainer-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Engage your audience</small> <br>
+                Video Explainer
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+          <div class="service-item">
+            <div class="service-img">
+              <img src="./img/social-2x.png" alt="" class="img-fluid">
+            </div>
+            <div class="service-item-header">
+              <h4>
+                <small>Reach more customers</small> <br>
+                Social Media
+              </h4>
+            </div>
+            <a href="#" class="transparent-link"></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Proposition -->
+  <section id="selling">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class=" selling-left col-xl-5 col-md-12 col-12">
+          <div class="selling-header">
+            <h2>
+              A whole world of freelance talent at your fingertips
+            </h2>
+          </div>
+          <div class="selling-content">
+            <div class="selling-text">
+              <h6>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                Quality work done quickly
+              </h6>
+              <p>
+                Find high-quality services at every price point. No hourly rates, just project-based pricing.
+              </p>
+            </div>
+            <div class="selling-text">
+              <h6>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                Quality work done quickly
+              </h6>
+              <p>
+                Find the right freelancer to begin working on your project within minutes.
+              </p>
+            </div>
+            <div class="selling-text">
+              <h6>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                Protected payments, every time
+              </h6>
+              <p>
+                Always know what you'll pay upfront. Your payment isn't released until you approve the work.
+              </p>
+            </div>
+            <div class="selling-text">
+              <h6>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                24/7 support
+              </h6>
+              <p>
+                Questions? Our round-the-clock support team is available to help anytime, anywhere.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="selling-right col-xl-7 col-md-12 col-12">
+          <div class="selling-video group" id="process-video">
+            <picture data-toggle="modal" data-target="#myModal">
+              <img src="./img/selling-proposition-still-1400-x1.png" alt="" class="img-fluid">
+            </picture>
+
+
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!-- categories -->
+  <section id="categories">
+    <div class="container">
+      <div class="categories-header">
+        <h2>Explore the marketplace
+        </h2>
+      </div>
+      <div class="categories-content">
+        <ul class="categories-list">
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/graphics-design.d32a2f8.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Graphics & Design</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/online-marketing.74e221b.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Digital Marketing</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/writing-translation.32ebe2e.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Writing & Translation</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/video-animation.f0d9d71.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Video & Animation</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/music-audio.320af20.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Music & Audio</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/programming.9362366.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Programming & Tech</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/business.bbdf319.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Business</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/lifestyle.745b575.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Lifestyle</p>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a href="">
+              <img src="./img/data.718910f.svg" alt="" loading="lazy" class="img-fluid">
+              <p>Data</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- business -->
+  <section id="business">
+    <div class="container">
+      <div class="row">
+        <div class="business-left col-xl-6 col-md-12 col-12">
+          <div class="business-header">
+            <small>
+              <i class="business-logo">
+                <svg width="219" height="27" viewBox="0 0 219 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#fff">
+                    <path
+                      d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
+                    </path>
+                    <path
+                      d="M91.7,23.7v2.7h-3.5V0h3.5v10.8c1.1-1.8,3.3-3,5.8-3c5.6,0,8.7,4,8.7,9.4s-3.2,9.4-8.8,9.4 C95,26.7,92.8,25.5,91.7,23.7z M102.6,17.3c0-3.8-2.2-6.4-5.6-6.4c-3.4,0-5.6,2.5-5.6,6.4s2.2,6.4,5.6,6.4 C100.4,23.6,102.6,21.1,102.6,17.3z">
+                    </path>
+                    <path
+                      d="M123.5,26.4H120v-3.2c-1,2.3-3.2,3.5-5.9,3.5c-4.1,0-6.8-3-6.8-7.3V8.1h3.5v10.6c0,2.9,1.7,4.9,4.3,4.9 c2.9,0,4.9-2.3,4.9-5.5V8.1h3.5L123.5,26.4z">
+                    </path>
+                    <path
+                      d="M125,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3c0-3.1,2.7-5.2,6.5-5.2 c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2c0,3.3-2.7,5.5-6.8,5.5 C128.1,26.7,125.2,24.3,125,20.5z">
+                    </path>
+                    <path d="M144.5,8.1H141v18.3h3.5V8.1z"></path>
+                    <path
+                      d="M147.1,8.1h3.5v3.2c1-2.3,3.2-3.5,5.9-3.5c4.1,0,6.8,3,6.8,7.3v11.3h-3.5V15.8c0-2.9-1.7-4.9-4.3-4.9 c-2.9,0-4.9,2.3-4.9,5.5v9.9H147L147.1,8.1z">
+                    </path>
+                    <path
+                      d="M182.9,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C186,26.7,183.2,24.3,182.9,20.5z">
+                    </path>
+                    <path
+                      d="M178.7,20.5c-0.5,2.1-2.3,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h14c0-0.3,0.1-0.9,0.1-1.4c0-4.6-3-8.7-8.7-8.7 c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.6,9.2,9.6c4.1,0,7.2-2.1,8.2-5.3L178.7,20.5z M173.4,10.7c3,0,4.9,1.9,5.1,4.6h-10.4 C168.7,12.2,170.5,10.7,173.4,10.7z">
+                    </path>
+                    <path
+                      d="M198.1,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C201.2,26.7,198.3,24.3,198.1,20.5z">
+                    </path>
+                    <path
+                      d="M142.7,0c-0.6,0-1.1,0.2-1.6,0.7c-0.4,0.4-0.7,1-0.7,1.6c0,0.6,0.2,1.1,0.7,1.6c0.5,0.4,1,0.7,1.6,0.7 c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.7-1,0.7-1.6c0-0.3-0.1-0.6-0.2-0.9s-0.3-0.5-0.5-0.8c-0.2-0.2-0.5-0.4-0.7-0.5 C143.4,0.1,143.1,0,142.7,0z">
+                    </path>
+                    <path
+                      d="M218.3,24.4L218.3,24.4c0,0.6-0.2,1.2-0.7,1.6c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.2-0.2-1.6-0.7 c-0.4-0.4-0.7-1-0.7-1.6v0c0-0.6,0.2-1.2,0.7-1.6c0.4-0.4,1-0.7,1.6-0.7c0.6,0,1.2,0.2,1.6,0.7C218.1,23.2,218.3,23.8,218.3,24.4z">
+                    </path>
+                  </g>
+                </svg>
+              </i>
+              <span class=" text-upper ml-1 ">New</span>
+            </small>
+            <h2>
+              A business solution designed for <i>teams</i>
+            </h2>
+            <p>
+              Upgrade to a curated experience packed with tools and benefits, dedicated to businesses
+            </p>
+          </div>
+          <div class="business-content">
+            <ul>
+              <li>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                Connect to freelancers with proven business experience
+              </li>
+              <li>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                Get matched with the perfect talent by a customer success manager
+              </li>
+              <li>
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z">
+                    </path>
+                    <path
+                      d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z">
+                    </path>
+                  </svg>
+                </span>
+                Manage teamwork and boost productivity with one powerful workspace
+              </li>
+            </ul>
+          </div>
+          <div class="business-btn">
+            <a href="">Explore Fiverr Business</a>
+          </div>
+        </div>
+        <div class="business-right col-xl-6 col-md-12 col-12">
+          <img src="./img/business-desktop-870-x1.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"
+    integrity="sha512-QDsjSX1mStBIAnNXx31dyvw4wVdHjonOwrkaIhpiIlzqGUCdsI62MwQtHpJF+Npy2SmSlGSROoNWQCOFpqbsOg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Navbar Animation -->
+  <script>
+    const nav = document.querySelector('.header')
+    window.addEventListener('scroll', fixNav)
+
+    function fixNav() {
+      if (window.scrollY > nav.offsetHeight + 50) {
+        nav.classList.add('active')
+      } else {
+        nav.classList.remove('active')
+      }
+    }
+  </script>
+  <!-- slick js -->
+  <script src="./libs/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.carousel-slider').slick({
+        arrows: false,
+        infinite: true,
+        speed: 1500,
+        fade: true,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              autoplay: false,
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.service-slider').slick({
+        infinite: true,
+        dots: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 850,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 580,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <video class="orca-video" autoplay="autoplay" controls poster preload="metadata" crossorigin="anonymous">
+        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7" type="video/mp4">
+        <track label="EN" srclang="en-US"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_en-US.00c8c11.vtt"
+          default="" kind="subtitles">
+        <track label="DE" srclang="de-DE"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_de-DE.479343e.vtt"
+          kind="subtitles">
+        <track label="ES" srclang="es"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_es.0e7d9ce.vtt"
+          kind="subtitles">
+        <track label="FR" srclang="fr-FR"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_fr-FR.62936b3.vtt"
+          kind="subtitles">
+        <track label="IT" srclang="it-IT"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_it-IT.15d2b21.vtt"
+          kind="subtitles">
+        <track label="NL" srclang="nl-NL"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_nl-NL.23e247e.vtt"
+          kind="subtitles">
+        <track label="PT" srclang="pt-BR"
+          src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_pt-BR.b8ba68e.vtt"
+          kind="subtitles">
+      </video>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

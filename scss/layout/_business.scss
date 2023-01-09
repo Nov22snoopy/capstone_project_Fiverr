@@ -1,0 +1,81 @@
+#business {
+  padding: 96px 0;
+  background-color: #0d084d;
+  .business-left {
+    .business-header {
+      margin-bottom: 20px;
+      max-width: 450px;
+      .business-logo {
+        svg {
+          width: 178px;
+          height: 22px;
+        }
+      }
+      .text-upper {
+        background:#584aff ;
+        color: white;
+        font-size: 10px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        padding: 3px 7px 2px;
+        text-align: center;
+        line-height: 100%;
+        display: inline-flex;
+        text-transform: uppercase;
+      }
+      h2 {
+        color: white;
+        margin: 32px 0 24px 0;
+        font-weight: 700;
+        line-height: 120%;
+        i {
+          font-family: "DomaineDisplay";
+          color: white;
+          font-weight: 500;
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+
+    .business-content {
+      ul {
+        list-style: none;
+        li {
+          color: white;
+          padding-bottom: 12px;
+          display: flex;
+          svg {
+            fill: rgb(122, 125, 133);
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .business-btn {
+      margin-top: 50px;
+      a {
+        padding: 12px 24px;
+        text-align: center;
+        background-color: #1dbf73;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: all 0.2s;
+        border: 1px solid transparent;
+        border-radius: 5px ;
+        &:hover {
+          background-color: #159057;
+        }
+      }
+    }
+  }
+  
+}
