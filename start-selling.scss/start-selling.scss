@@ -1,0 +1,177 @@
+@import "./../scss/helper/variables";
+
+
+header {
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  padding: 12px 0;
+  position: fixed;
+  transition: all 0.5s;
+
+}
+
+#carousel {
+
+  position: relative;
+
+  .carousel-slider {
+    .carousel_item {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, .81) 17.97%, rgba(0, 0, 0, .31) 57.6%, transparent 77.6%),
+        url(./../img/start-selling-bg.webp);
+
+
+      .carousel-footer {
+        position: absolute;
+        bottom: 15px;
+        right: 80px;
+
+        i {
+          font-size: 0.8rem;
+          color: $color-yellow;
+        }
+
+        p {
+          color: $color-white-1;
+
+          b {
+            color: $color-white-1;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .carousel-text {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    .carousel-content {
+      .carousel-head {
+        margin-bottom: 20px;
+
+        span {
+          font-size: $fs-7 - 8px;
+          color: $color-white-1;
+          line-height: 56px;
+          font-weight: $fw-4;
+        }
+
+        svg {
+          margin-top: 50px;
+        }
+
+        p {
+          margin-top: 50px;
+          color: $color-white-1;
+          line-height: 56px;
+          font-weight: $fw-4;
+          font-size: $fs-4;
+        }
+
+        @media screen and (max-width: 768px) {
+          span {
+            font-size: $fs-3;
+          }
+
+          i {
+            font-size: $fs-3 !important;
+          }
+        }
+      }
+
+      .carousel-search {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        overflow: hidden;
+        border: none;
+
+        span {
+          border: none;
+          width: 80%;
+          border-radius: 5px;
+          overflow: hidden;
+
+          input {
+            height: 50px;
+            width: 100%;
+            border: none;
+            &::placeholder {
+              padding-left: 20px;
+            }
+          }
+        }
+
+        .search-btn {
+          height: 100%;
+
+          a {
+            overflow: hidden;
+            padding: $pd-3 + 4px;
+            text-align: center;
+            background-color: $color-green-1;
+            text-decoration: none;
+            color: $color-white-1;
+            font-weight: 700;
+            transition: all 0.2s;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            &:hover {
+              background-color: $color-green-2;
+            }
+          }
+
+        }
+
+      }
+
+      .carousel-btn {
+        margin-top: 30px;
+        display: flex;
+
+        .btn-list {
+          a {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: $color-white-1;
+            padding: $pd-1 $pd-3;
+            border: 1px solid $color-white-1;
+            border-radius: 20px;
+            margin: 0 5px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+
+            &:hover {
+              background-color: $color-grey-2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+footer {
+  position: absolute;
+  z-index: 999;
+  bottom: 50px;
+  left: 10px; 
+}

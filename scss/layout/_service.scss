@@ -1,0 +1,87 @@
+#service {
+  padding: $pd-6 0;
+  .service-header {
+    padding-bottom: $pd-4;
+  }
+  .service-content {
+
+    .service-slider {
+      .service-item {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        
+
+        .service-img {
+          img {
+            width: 240px;
+          }
+        }
+
+        .service-item-header {
+          position: absolute;
+          top: 5px;
+          left: 15px;
+
+          h4 {
+            letter-spacing: 1px;
+            color: $color-white-1;
+            font-weight: 700;
+
+
+            small {
+              font-size: 0.9rem;
+              color: $color-white-1;
+
+            }
+          }
+        }
+
+        .transparent-link {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: $color-white-1;
+          opacity: 0;
+          transition: all 0.5s;
+
+        }
+        &:hover {
+          .transparent-link {
+            opacity: 0.2;
+          }
+        }
+      }
+
+      .slick-prev {
+        @include slick-arrows ();
+      }
+      .slick-next {
+        @include slick-arrows ();
+        margin-right: 30px;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: transparent;
+        width: 16px;
+        height: 16px;
+        background-image: url(./../../img/arrows.a8b0bad.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+
+      .slick-next:before {
+        background-position: 0 -20px;
+      }
+    }
+
+
+
+  }
+
+}

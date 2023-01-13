@@ -1,0 +1,44 @@
+#sign-up {
+  padding: 96px 0;
+  .sign-up-content {
+    padding: $pd-7 $pd-6;
+    @media screen and (max-width:768px) {
+      padding: $pd-5 $pd-4 + 12px;
+      background-image: none;
+      background-color: $color-dark-brown;
+    }
+    background-image: url(./../../img/bg-signup-1400-x1.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .sign-up-text {
+      h2 {
+        padding-bottom: $pd-5;
+
+        span {
+          @media screen and (max-width:768px) {
+            font-size: $fs-5;
+          }
+          font-size: $fs-7;
+          font-weight: $fw-4;
+          color: $color-white-1;
+
+          i {
+            @media screen and (max-width:768px) {
+              font-size: $fs-5;
+            }
+            font-size: $fs-7;
+            font-weight: $fw-2;
+            color: $color-white-1;
+            font-family: "Domine", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
+        }
+      }
+
+      .sign-up-btn {
+        @include btn($pd-3, $pd-4, $color-green-1, $color-white-1, $color-green-2);
+      }
+    }
+  }
+}

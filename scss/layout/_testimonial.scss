@@ -1,0 +1,90 @@
+#testimonial {
+  padding: $pd-6 0;
+
+  .testimonial-slider {
+    .testimonial-item {
+      flex-wrap: wrap;
+
+      .testimonial-img {
+        picture {
+          cursor: pointer;
+          img {width: 100%;}
+          &::after {
+            content: "";
+            background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png) no-repeat;
+            background-size: 80px;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+
+      .testimonial-content {
+        padding: 0 $pd-4 + 6px;
+        margin-top: 30px;
+        @media screen and (max-width:768px) {
+          padding:  0;
+        }
+
+        h5 {
+          font-weight: $fw-1;
+          color: $color-grey-4;
+          padding-bottom: $pd-3 + 4px;
+
+          .testimonial-logo {
+            border-left: 1px solid $color-white-3;
+            margin-left: $pd-3 + 4px;
+            padding-left: $pd-3 + 4px;
+            img {
+              height: 36px;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+
+        }
+
+        .testimonial-text {
+
+          i {
+            font-family: "Domine", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: $fw-2;
+            color: $color-green-3;
+            font-size: $fs-5 - 2px;
+            line-height: 2.8rem;
+          }
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      @include slick-arrows ();
+
+    }
+
+
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: transparent;
+      width: 16px;
+      height: 16px;
+      background-image: url(./../../img/arrows.a8b0bad.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .slick-next:before {
+      background-position: 0 -20px;
+    }
+  }
+
+
+}
