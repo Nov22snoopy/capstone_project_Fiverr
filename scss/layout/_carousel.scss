@@ -1,0 +1,205 @@
+#carousel {
+  position: relative;
+
+  .carousel-slider {
+    height: 680px;
+    width: 100%;
+
+    .carousel_item:nth-child(1) {
+      background-image: url(./../../img/bg-hero-1-1792-x1.png);
+    }
+
+    .carousel_item:nth-child(2) {
+      background-image: url(./../../img/bg-hero-2-1792-x1.png);
+    }
+
+    .carousel_item:nth-child(3) {
+      background-image: url(./../../img/bg-hero-3-1792-x1.png);
+    }
+
+    .carousel_item:nth-child(4) {
+      background-image: url(./../../img/bg-hero-4-1792-x1.png);
+    }
+
+    .carousel_item:nth-child(5) {
+      background-image: url(./../../img/bg-hero-5-1792-x1.png);
+    }
+
+    .carousel_item {
+      position: relative;
+      height: 680px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media screen and (max-width:768px) {
+        background-image: none !important;
+        background-color: $color-green-4!important;
+        .carousel-footer {
+          opacity: 0;
+        }
+      }
+
+      .carousel-footer {
+        position: absolute;
+        bottom: 15px;
+        right: 80px;
+
+        i {
+          font-size: 0.8rem;
+          color: $color-yellow;
+        }
+
+        p {
+          color: $color-white-1;
+
+          b {
+            color: $color-white-1;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .carousel-text {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .carousel-content {
+      .carousel-head {
+        margin-bottom: 20px;
+
+        span {
+          font-size: $fs-7;
+          color: $color-white-1;
+          line-height: 56px;
+          font-weight: $fw-4;
+
+          i {
+            font-size: $fs-7;
+            font-family: "DomaineDisplay";
+            font-weight: $fw-4;
+            color: $color-white-1;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          span {
+            font-size: 2rem;
+          }
+          i{
+            font-size: 2rem !important;
+          }
+        }
+      }
+
+      .carousel-search {
+        position: relative;
+        width: 100%;
+        display: flex;
+        background-color: $color-white-1;
+        align-items: center;
+        border-radius: 5px;
+        overflow: hidden;
+        border: none;
+
+        span:first-of-type {
+          text-align: center;
+          line-height: 45px;
+          height: 50px;
+          width: 50px;
+          background-color: transparent;
+          color: gray;
+
+          border: none;
+        }
+
+        span {
+          border: none;
+          width: 100%;
+
+          input {
+            height: 50px;
+            width: 70%;
+            outline: none;
+            border: none;
+          }
+        }
+
+        .search-btn {
+          height: 100%;
+
+          a {
+            padding: $pd-4;
+            text-align: center;
+            background-color: $color-green-1;
+            text-decoration: none;
+            color: $color-white-1;
+            font-weight: 700;
+            transition: all 0.2s;
+            border: none;
+
+            &:hover {
+              background-color: $color-green-2;
+            }
+          }
+
+        }
+
+      }
+
+      .carousel-btn {
+        margin-top: 30px;
+        display: flex;
+        @media screen and (max-width: 768px) {
+          opacity: 0;
+        }
+
+        .btn-list {
+          a {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: $color-white-1;
+            padding: $pd-1 $pd-3;
+            border: 1px solid $color-white-1;
+            border-radius: 20px;
+            margin: 0 5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+
+            &:hover {
+              background-color: $color-white-1;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-brand {
+    background-color: $color-white-2;
+
+    .brand-list {
+      text-align: center;
+      max-width: 120px;
+      margin: 10px;
+
+      p {
+        margin-top: 15px;
+        text-align: center;
+        color: $color-grey-2;
+        font-weight: 600;
+      }
+
+      img {
+        height: 60px;
+      }
+    }
+  }
+}
